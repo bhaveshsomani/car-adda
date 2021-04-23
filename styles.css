@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-style: sans-serif;
+
+}
+
+body{
+	background:#007bff ! important;
+}
+h1{
+	text-align: center;
+	margin: 100px auto 50px !important;
+	color: #fff;
+	font-family: Geneva;
+	font-style: Verdana;
+}
+
+.main{
+	width: 100%;
+	min-height: 380px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.Services{
+	background:#fff;
+	padding: 30px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	box-shadow: 0 0 20px -15px #030380;
+	transition: transform .8s;
+}
+
+.Services-logo{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin: -90px auto 0;
+	background:#fff;
+	border:18px solid #007bff;
+}
+
+.Services-logo img{
+	width: 50px;
+	margin-top: 20px;
+}
+
+.Services h4{
+	height: 35px;
+	width: 80%;
+	background :#fff;
+	margin: 50px auto;
+	position: relative;
+}
+
+.Services h4::after{
+	content: '';
+	width: 40px;
+	height: 30px;
+	background:linear-gradient(to right,#fff,#007bff);
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	z-index: -1; 
+}
+
+.Services h4::before{
+	content: '';
+	width: 40px;
+	height: 30px;
+	background:linear-gradient(to right,#007bff,#fff);
+	position: absolute;
+	left: -5px;
+	bottom: -5px;
+	z-index: -1; 
+}
+
+.shadowone{
+	height: 200px;
+	width: 80%;
+	background:#fff;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0;
+	left: 10%;
+	z-index: -1; 
+	box-shadow: 0 0 20px -15px #030380;
+	transition: transform .8s;
+}
+
+.shadowtwo{
+	height: 200px;
+	width: 64%;
+	background:#fff;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0;
+	left: 18%;
+	z-index: -2; 
+}
+
+.main:hover.services{
+	transform: translateY(-50px);
+}
+
+.main:hover.shadowone{
+	transform: translateY(-25px);
+}
